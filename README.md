@@ -1,4 +1,8 @@
-# Hyper LR PINN Source code
+# Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks
+
+## Introduction
+
+This is a pytorch implementation for our NeurIPS 2023 (spotlight) paper [Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks](https://neurips.cc/virtual/2023/poster/70991)
 
 ## Experimental environment settings.
 
