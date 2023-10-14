@@ -54,6 +54,7 @@ Detailed settings can be changed in config.py
 
 
 For example, if you run the following code,
+
     python train_meta.py --epoch 20000 --pde_type convection --init_cond sin_1 --start_coeff_1 1 --end_coeff_1 20
     python train_adap.py --epoch 10000 --pde_type convection --init_cond sin_1 --start_coeff_1 1 --end_coeff_1 20 --target_coeff_1 10
     python train_full.py --epoch 10000 --pde_type convection --init_cond sin_1 --start_coeff_1 1 --end_coeff_1 20 --target_coeff_1 10
@@ -62,12 +63,12 @@ You can train/test the Hyper-LR-PINNs in the setting below.
 
  [ Experimental setting ] 
 
-phase1 : 20000 epoch
-phase2 : 10000 epoch
-pde type : convection equation, 
-initial condition : 1+sin(x), 
-target equation : beta=10 (convection equation), 
-meta-learning range : beta=[1, 20]
+phase1 : 20000 epoch \
+phase2 : 10000 epoch \
+pde type : convection equation, \
+initial condition : 1+sin(x), \
+target equation : beta=10 (convection equation), \
+meta-learning range : beta $\in$ [1, 20]
 
 ## Test
 
