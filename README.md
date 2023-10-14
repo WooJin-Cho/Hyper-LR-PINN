@@ -2,7 +2,11 @@
 
 ## Introduction
 
-This is a pytorch implementation for our NeurIPS 2023 (spotlight) paper [Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks](https://neurips.cc/virtual/2023/poster/70991)
+This repository contains pytorch implementation for our NeurIPS 2023 (spotlight) paper: 
+
+[Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks](https://neurips.cc/virtual/2023/poster/70991)
+
+<img src = "image/model_framework.png">
 
 ## Experimental environment settings.
 
@@ -11,7 +15,7 @@ Run the following code before starting the experiment.
     conda env create -f env.yaml
     conda activate meta
 
-## Data generation.
+## Data generation
 
 You can generate dataset for train / validation / test. 
 Run code in the folder "data_gen".
