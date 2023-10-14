@@ -1,13 +1,13 @@
-## Hyper LR PINN Source code
+# Hyper LR PINN Source code
 
-0. Experimental environment settings.
+## Experimental environment settings.
 
 Run the following code before starting the experiment.
 
     conda env create -f env.yaml
     conda activate meta
 
-1. Data generation.
+## Data generation.
 
 You can generate dataset for train / validation / test. 
 Run code in the folder "data_gen".
@@ -32,7 +32,7 @@ Set the initial condition using "u0_str" parser.
     gauss       : Gaussian distribution with STD=pi/4.
     gauss_pi_2  : Gaussian distribution with STD=pi/2.
 
-2. Train
+## Train
 
 Run the following code for Hyper-LR-PINN training / testing.
 
@@ -61,7 +61,7 @@ initial condition : 1+sin(x),
 target equation : beta=10 (convection equation), 
 meta-learning range : beta=[1, 20]
 
-3. Test
+## Test
 
 In additaon, we attach checkpoint of Hyper-LR-PINN (.pt file)
 If you want to check it quickly, run the following code below.
@@ -76,7 +76,7 @@ For example, if you run the following code,
 
 You can test the Hyper-LR-PINN (Adaptive rank) quickly. (beta=40)
 
-4. Other code
+## Other code
 
 Brief description of the other code files.
 
