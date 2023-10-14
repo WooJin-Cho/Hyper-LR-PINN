@@ -1,6 +1,5 @@
-##########################################################################
 ## Hyper LR PINN Source code
-##########################################################################
+
 0. Experimental environment settings.
 
 Run the following code before starting the experiment.
@@ -8,7 +7,6 @@ Run the following code before starting the experiment.
     conda env create -f env.yaml
     conda activate meta
 
-##########################################################################
 1. Data generation.
 
 You can generate dataset for train / validation / test. 
@@ -34,7 +32,6 @@ Set the initial condition using "u0_str" parser.
     gauss       : Gaussian distribution with STD=pi/4.
     gauss_pi_2  : Gaussian distribution with STD=pi/2.
 
-##########################################################################
 2. Train
 
 Run the following code for Hyper-LR-PINN training / testing.
@@ -64,7 +61,6 @@ initial condition : 1+sin(x),
 target equation : beta=10 (convection equation), 
 meta-learning range : beta=[1, 20]
 
-##########################################################################
 3. Test
 
 In additaon, we attach checkpoint of Hyper-LR-PINN (.pt file)
@@ -79,7 +75,7 @@ For example, if you run the following code,
     python test.py --pde_type convection --init_cond sin_1 --start_coeff_1 30 --end_coeff_1 40 --target_coeff_1 40
 
 You can test the Hyper-LR-PINN (Adaptive rank) quickly. (beta=40)
-##########################################################################
+
 4. Other code
 
 Brief description of the other code files.
@@ -89,4 +85,3 @@ Brief description of the other code files.
         model.py   :  Hyper-LR-PINN model. (phase1, phase2)
         utils.py   :  PDE residual loss
         
-##########################################################################
