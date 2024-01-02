@@ -1,4 +1,4 @@
-# Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks
+# Hypernetwork-based Meta-Learning for Low-Rank Physics-Informed Neural Networks (NeurIPS 2023)
 
 ## Introduction
 
